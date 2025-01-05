@@ -13,11 +13,13 @@ export default function Products() {
       <ul>
         {products.map((product) => (
           <li key={product.id}>
-            <Link href={`/products/${product.id}`}>
-              <a style={{ color: 'blue', textDecoration: 'underline' }}>
-                {product.name} - {product.price}
-              </a>
-            </Link>
+           <Link
+  href={`/products/${product.id}`}
+  style={{ color: 'blue', textDecoration: 'underline' }}
+>
+  {product.name} - {product.price}
+</Link>
+
           </li>
         ))}
       </ul>
